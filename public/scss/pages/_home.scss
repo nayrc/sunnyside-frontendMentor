@@ -1,0 +1,258 @@
+@use "../util/variables";
+@use "../util/mixins";
+
+header {
+    @media only screen and (max-width: 768px) {
+        background: variables.$Softred;
+    }
+
+    .navbar {
+
+        .navbar-brand {}
+
+        .nav-item {
+            margin: 0 1rem;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            @media only screen and (max-width: 768px) {
+                margin: 1rem 0;
+                text-align: center;
+            }
+        }
+
+        .nav-link {
+            font-family: variables.$barlow;
+            color: variables.$White;
+
+            &.btn__white {
+                font-family: variables.$fraunces;
+            }
+        }
+    }
+}
+
+.main__header {
+    min-height: 100vh;
+    width: 100%;
+    margin-top: -6.5rem !important;
+    background: url("../../images/desktop/image-header.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: variables.$White;
+
+    @media only screen and (max-width: 768px) {
+        margin-top: 0 !important;
+    }
+
+    .title {
+        letter-spacing: 3px;
+        font-family: variables.$fraunces;
+        font-weight: 900;
+    }
+}
+
+#profiles {
+    overflow: hidden;
+
+    .explanation {
+        width: 50%;
+
+        @media only screen and (max-width: 768px) {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            @include mixins.paddingY5rem;
+        }
+
+        >* {
+            margin: 1.5rem 0 !important;
+        }
+
+        p {
+            font-family: variables.$barlow;
+        }
+    }
+
+    .dawa {
+        position: relative;
+
+        .desc {
+            position: absolute;
+            width: 50%;
+            text-align: center;
+            bottom: 10%;
+            left: 25%;
+
+            h4 {
+                font-weight: 900;
+            }
+
+            * {
+                margin: 1rem 0 !important;
+            }
+
+            @media only screen and (max-width: 768px) {
+                @include mixins.sectionMobileCenter
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .bg-explanation {
+                min-height: 60vh;
+            }
+        }
+    }
+
+    .bg-explanation {
+        position: relative;
+        width: 100%;
+        min-height: 80vh;
+        background: #fff;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        @media only screen and (max-width: 768px) {
+            min-height: 40vh;
+        }
+    }
+
+    * {
+        margin: 0 !important;
+        padding: 0 !important
+    }
+
+    @media only screen and (max-width: 768px) {
+        .one {
+            order: 2;
+        }
+
+        .two {
+            order: 1;
+        }
+
+        .three {
+            order: 3;
+        }
+
+        .four {
+            order: 4;
+        }
+
+        .five {
+            order: 5;
+        }
+
+        .six {
+            order: 6;
+        }
+    }
+}
+
+#testimonials {
+    min-height: 80vh;
+
+    @media only screen and (max-width: 768px) {
+        @include mixins.paddingY5rem;
+    }
+
+    .title {
+        font-size: 3rem;
+        letter-spacing: 3px;
+        color: variables.$VeryDarkGrayishBlue;
+    }
+
+    .card__testimonials {
+        min-height: 45vh;
+        margin: 3rem 0;
+        font-family: variables.$barlow;
+
+        @media only screen and (max-width: 768px) {
+            min-height: 30vh;
+            margin: 2rem 0;
+        }
+
+        .top {
+            .img {
+                position: relative;
+                width: 100px;
+                min-height: 100px;
+                background: #fff;
+                border-radius: 50%;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: 0.5s;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .bottom {
+            .name {
+                font-family: variables.$fraunces !important;
+                font-weight: 700;
+            }
+
+            .job {
+                color: fade-out(#000000, 0.5);
+            }
+        }
+    }
+}
+
+.gallery {
+    overflow: hidden;
+
+    .bg-gallery {
+        position: relative;
+        width: 100%;
+        min-height: 70vh;
+        background: #fff;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        @media only screen and (max-width: 768px) {
+            min-height: 30vh;
+        }
+    }
+
+    * {
+        margin: 0 !important;
+        padding: 0 !important
+    }
+}
+
+footer {
+    background: fade-out(variables.$Darkmoderatecyan, 0.6);
+    padding: 1rem 0;
+
+    a {
+        color: variables.$Darkdesaturatedcyan;
+        font-family: variables.$barlow;
+        margin: 0 1rem;
+    }
+}

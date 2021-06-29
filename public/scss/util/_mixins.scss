@@ -1,0 +1,10 @@
+@mixin sectionMobileCenter {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    left: 10%;
+}
+
+@mixin paddingY5rem {
+    padding: 5rem 0 !important;
+}

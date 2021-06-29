@@ -1,0 +1,344 @@
+@import url("https://fonts.google.com/specimen/Barlow");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700;900&display=swap");
+html {
+  font-size: 70%;
+}
+
+body {
+  font-family: "Fraunces", serif;
+  color: #23303e;
+}
+
+/* Global Style */
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+q {
+  font-size: 1.5rem;
+}
+
+li {
+  font-size: 1.5rem;
+}
+
+a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+button {
+  font-size: 1.5rem;
+}
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+.btn__white {
+  background: white;
+  color: #23303e !important;
+  padding: 0.5rem 1.5rem !important;
+  text-transform: uppercase;
+  border-radius: 2rem;
+}
+
+.minheight_80 {
+  min-height: 80vh;
+}
+
+.main__button {
+  text-transform: uppercase;
+  color: #23303e;
+  position: relative;
+}
+.main__button.yellow {
+  font-weight: 700;
+}
+.main__button.yellow::after {
+  position: absolute;
+  content: "";
+  width: 110%;
+  height: 7px;
+  bottom: 3%;
+  background: rgba(250, 212, 0, 0.4);
+  border-radius: 1rem;
+  left: -5%;
+  z-index: -1;
+}
+.main__button.softred {
+  font-weight: 700;
+}
+.main__button.softred::after {
+  position: absolute;
+  content: "";
+  width: 110%;
+  height: 7px;
+  bottom: 3%;
+  background: rgba(254, 120, 103, 0.4);
+  border-radius: 1rem;
+  left: -5%;
+  z-index: -1;
+}
+
+.navbar-brand {
+  font-family: "Barlow", sans-serif !important;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.navbar-brand.white {
+  color: white;
+}
+.navbar-brand.grey {
+  color: #25564b;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    background: #fe7867;
+  }
+}
+header .navbar .nav-item {
+  margin: 0 1rem;
+}
+header .navbar .nav-item:last-child {
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  header .navbar .nav-item {
+    margin: 1rem 0;
+    text-align: center;
+  }
+}
+header .navbar .nav-link {
+  font-family: "Barlow", sans-serif;
+  color: white;
+}
+header .navbar .nav-link.btn__white {
+  font-family: "Fraunces", serif;
+}
+
+.main__header {
+  min-height: 100vh;
+  width: 100%;
+  margin-top: -6.5rem !important;
+  background: url("../../images/desktop/image-header.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+@media only screen and (max-width: 768px) {
+  .main__header {
+    margin-top: 0 !important;
+  }
+}
+.main__header .title {
+  letter-spacing: 3px;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+
+#profiles {
+  overflow: hidden;
+}
+#profiles .explanation {
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  #profiles .explanation {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 5rem 0 !important;
+  }
+}
+#profiles .explanation > * {
+  margin: 1.5rem 0 !important;
+}
+#profiles .explanation p {
+  font-family: "Barlow", sans-serif;
+}
+#profiles .dawa {
+  position: relative;
+}
+#profiles .dawa .desc {
+  position: absolute;
+  width: 50%;
+  text-align: center;
+  bottom: 10%;
+  left: 25%;
+}
+#profiles .dawa .desc h4 {
+  font-weight: 900;
+}
+#profiles .dawa .desc * {
+  margin: 1rem 0 !important;
+}
+@media only screen and (max-width: 768px) {
+  #profiles .dawa .desc {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    left: 10%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #profiles .dawa .bg-explanation {
+    min-height: 60vh;
+  }
+}
+#profiles .bg-explanation {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  background: #fff;
+}
+#profiles .bg-explanation img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 768px) {
+  #profiles .bg-explanation {
+    min-height: 40vh;
+  }
+}
+#profiles * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+@media only screen and (max-width: 768px) {
+  #profiles .one {
+    order: 2;
+  }
+  #profiles .two {
+    order: 1;
+  }
+  #profiles .three {
+    order: 3;
+  }
+  #profiles .four {
+    order: 4;
+  }
+  #profiles .five {
+    order: 5;
+  }
+  #profiles .six {
+    order: 6;
+  }
+}
+
+#testimonials {
+  min-height: 80vh;
+}
+@media only screen and (max-width: 768px) {
+  #testimonials {
+    padding: 5rem 0 !important;
+  }
+}
+#testimonials .title {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  color: #5a636c;
+}
+#testimonials .card__testimonials {
+  min-height: 45vh;
+  margin: 3rem 0;
+  font-family: "Barlow", sans-serif;
+}
+@media only screen and (max-width: 768px) {
+  #testimonials .card__testimonials {
+    min-height: 30vh;
+    margin: 2rem 0;
+  }
+}
+#testimonials .card__testimonials .top .img {
+  position: relative;
+  width: 100px;
+  min-height: 100px;
+  background: #fff;
+  border-radius: 50%;
+}
+#testimonials .card__testimonials .top .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+#testimonials .card__testimonials .bottom .name {
+  font-family: "Fraunces", serif !important;
+  font-weight: 700;
+}
+#testimonials .card__testimonials .bottom .job {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.gallery {
+  overflow: hidden;
+}
+.gallery .bg-gallery {
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  background: #fff;
+}
+.gallery .bg-gallery img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 768px) {
+  .gallery .bg-gallery {
+    min-height: 30vh;
+  }
+}
+.gallery * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+footer {
+  background: rgba(69, 140, 126, 0.4);
+  padding: 1rem 0;
+}
+footer a {
+  color: #25564b;
+  font-family: "Barlow", sans-serif;
+  margin: 0 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */

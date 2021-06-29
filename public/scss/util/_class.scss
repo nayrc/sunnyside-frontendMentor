@@ -1,0 +1,51 @@
+@use "./variables";
+
+.btn__white {
+    background: variables.$White;
+    color: variables.$VeryDarkDesaturatedBlue !important;
+    padding: 0.5rem 1.5rem !important;
+    text-transform: uppercase;
+    border-radius: 2rem;
+}
+
+.minheight_80 {
+    min-height: 80vh;
+}
+
+.main__button {
+    text-transform: uppercase;
+    color: variables.$VeryDarkDesaturatedBlue;
+    position: relative;
+
+    @each $class,
+    $value in variables.$buttonColor {
+        &.#{$class} {
+            font-weight: 700;
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 110%;
+                height: 7px;
+                bottom: 3%;
+                background: fade-out($value, 0.6);
+                border-radius: 1rem;
+                left: -5%;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+.navbar-brand {
+    font-family: variables.$barlow !important;
+    font-weight: 800;
+    font-size: 2.5rem;
+
+    @each $class,
+    $value in variables.$brandColor {
+        &.#{$class} {
+            color: $value;
+        }
+    }
+}

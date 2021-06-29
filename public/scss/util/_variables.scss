@@ -1,0 +1,30 @@
+@import url("https://fonts.google.com/specimen/Barlow");
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700;900&display=swap');
+
+$barlow: "Barlow",
+sans-serif;
+$fraunces: 'Fraunces',
+serif;
+;
+
+// Color Primary
+$Softred: hsl(7, 99%, 70%);
+$Yellw: hsl(51, 100%, 49%);
+$Darkdesaturatedcyan: hsl(167, 40%, 24%);
+$Darkblue: hsl(198, 62%, 26%);
+$Darkmoderatecyan : hsl(168, 34%, 41%);
+
+// Neutral
+
+$VeryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+$VeryDarkGrayishBlue: hsl(213, 9%, 39%);
+$DarkGrayishBlue: hsl(232, 10%, 55%);
+$GrayishBlue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+
+// Each
+$buttonColor: (yellow: $Yellw,
+    softred: $Softred);
+
+$brandColor: (white: $White,
+    grey: $Darkdesaturatedcyan);
